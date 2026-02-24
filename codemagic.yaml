@@ -5,6 +5,7 @@ workflows:
     instance_type: mac_mini_m1
     environment:
       node: 22
+      java: 21
       groups:
         - supabase
     scripts:
@@ -23,4 +24,3 @@ workflows:
           chmod +x gradlew
           ./gradlew assembleDebug
     artifacts:
-      - android/app/build/outputs/apk/debug/*.apk
