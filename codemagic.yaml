@@ -6,7 +6,6 @@ workflows:
     environment:
       node: 22
       groups:
-        - google_play
         - supabase
     scripts:
       - name: Install dependencies
